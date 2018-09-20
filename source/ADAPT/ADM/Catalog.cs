@@ -17,7 +17,9 @@
  *   Kathleen Oneal - added manufactures list
  *   Justin Sliekers - implement device element changes
  *   Joseph Ross - added EquipmentConfigurationGroups
-  *******************************************************************************/
+ *   R. Andres Ferreyra - Added GeoPoliticalContexts
+ *   R. Andres Ferreyra - Added DeviceSeries
+   *******************************************************************************/
 
 using System.Collections;
 using System.Collections.Generic;
@@ -46,6 +48,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.ADM
             Farms = new List<Farm>();
             Fields = new List<Field>();
             FieldBoundaries = new List<FieldBoundary>();
+            GeoPoliticalContexts = new List<GeoPoliticalContext>();
             Growers = new List<Grower>();
             GuidancePatterns = new List<GuidancePattern>();
             GuidanceGroups = new List<GuidanceGroup>();
@@ -58,6 +61,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.ADM
             TimeScopes = new List<TimeScope>();
             DeviceElementConfigurations = new List<DeviceElementConfiguration>();
             DeviceModels = new List<DeviceModel>();
+            DeviceSeries = new List<DeviceSeries>();
             DeviceElements = new List<DeviceElement>();
             HitchPoints = new List<HitchPoint>();
             Companies = new List<Company>();
@@ -82,6 +86,8 @@ namespace AgGateway.ADAPT.ApplicationDataModel.ADM
 
         public List<DeviceModel> DeviceModels { get; set; }
 
+        public List<DeviceSeries> DeviceSeriesList { get; set; }
+
         public List<DeviceElementConfiguration> DeviceElementConfigurations { get; set; }
 
         public List<EquipmentConfiguration> EquipmentConfigurations { get; set; }
@@ -94,6 +100,8 @@ namespace AgGateway.ADAPT.ApplicationDataModel.ADM
 
         public List<FieldBoundary> FieldBoundaries { get; set; }
 
+        public List<GeoPoliticalContext> GeoPoliticalContexts { get; set; }
+        
         public List<Grower> Growers { get; set; }
 
         public List<GuidancePattern> GuidancePatterns { get; set; }
